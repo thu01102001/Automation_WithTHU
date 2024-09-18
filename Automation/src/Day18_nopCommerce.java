@@ -282,9 +282,9 @@ public class Day18_nopCommerce {
         for (WebElement nameProductAfter : allNameProductAfter) {
             nameProductsAfter.add(nameProductAfter.getText());
         }
-        System.out.println(nameProductsAfter);
         Collections.sort(nameProductsBefore, Collections.reverseOrder());
-        Assert.assertEquals(nameProductsAfter, nameProductsBefore);
+        Assert.assertEquals(nameProductsAfter, nameProductsBefore);        System.out.println(nameProductsAfter);
+
         Thread.sleep(3000);
         System.out.println("Giá thấp - cao");
         List<WebElement> allPrice = driver.findElements(By.cssSelector("div.prices span.actual-price"));
